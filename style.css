@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
       font-family: Arial;
       background-color: gray;
@@ -6,27 +12,56 @@ body {
       padding: 50px;
     }
 
-    input {
-      padding: 10px;
-      width: 200px;
-      border-radius: 5px;
-      border: none;
-    }
-    .to-do{
-        align-items: center;
-    }
+.add-todo {
+  text-align: center;
+  padding: 32px 0;
+}
 
-    button {
-      padding: 10px;
-      margin-left: 5px;
-      border-radius: 5px;
-      cursor: pointer;
-      border: none;
-    }
-    .deletebtn{
-        background-color: red;
-        color: white;
-    }
-    .todo-item {
-      margin-top:15px;
-    }
+.add-todo input,
+.add-todo button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.todos-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.todo-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: gray;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.todo-item p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.todo-item.completed p {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todo-item button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.deleteBtn{
+    color: white;
+    background-color: red;
+}
+
+.markBtn{
+    color: white;
+    background-color: green;
+}
+
+   
