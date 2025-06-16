@@ -8,12 +8,11 @@
 </head>
 <body>
      <h1>Worlds Best To-Do Application</h1>
-     
-  <input type="text" id="todo-input" placeholder=" Enter To do" spellcheck="false">
-  <button onclick="addTodo()">Add To do</button>
-  
-  <div id="todo-list"></div>
-  
-  <script src="script.js"></script>
+     <div class="add-todo">
+      <input type="text" placeholder="Enter todo" id="todo-input" />
+      <button onclick="addTodo()">Add Todo</button>
+    </div>
+ <div class="todos-wrapper" id="todos"></div>
+ <script src="script.js"></script>
 </body>
 </html>
